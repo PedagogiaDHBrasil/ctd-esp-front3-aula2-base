@@ -2,9 +2,8 @@
 
 ## Base para o exercício
 
-1. Em `pages/pokemon/[id].js` teremos três funções, sendo ela duas async await. A função não assíncrona deverá retornar os dados (nome e imagem do pokémon).
-2. A função `getStaticPaths` será utilizada para definir uma lista de caminhos (rotas) a serem gerados estaticamente, além disso iremos utilizar o `fallback: false` para caso seja acessado algum caminho não passado no parâmetro do `paths`.
-3. Na função `getStaticProps` iremos ter um fetch na API do pokémon (`https://pokeapi.co/api/v2/pokemon/${params.id}`) para ter os dados (do parâmetro) necessários para renderizar a página.
+1. Em pages crie uma página estática com o nome `static.js`. Nele iremos utilizar o componente Link do `next/link` para navegação.
+2. Em `pages/[dynamic]/[id].js` iremos criar nossa estrutura da rota dinâmica. Nele iremos utilize o useRouter para pegar os dados passado pela URL, para isso iremos utilizar a query que analisada parâmetros de rota dinâmica. 
 
 Clique [aqui](https://github.com/PedagogiaDHBrasil/ctd-esp-front3-aula2-completo) para te acesso a Base para o exercício completo.
 
